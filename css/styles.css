@@ -21,7 +21,7 @@ body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  background-image: var(--background-image);
+  background-image: var(--white);
 }
 h1 {
    max-width: 7%;
@@ -53,13 +53,14 @@ nav a {
   color: var(--black);
 }
 a:hover{
-  background-color: var(--white);
+  background-color: var(--beg);
   border-radius: 10px;
 }
 
 img {
   max-width: 100%;
   border-radius: 5px;
+  transform: scale(1.05);
 }
 .card {
   border: var(--black);
@@ -71,7 +72,7 @@ img {
   background-color: var(--beg);
   padding: 0.5rem;
   border-radius: 5px;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: bold;
@@ -159,7 +160,7 @@ img {
 
 /* Contact information */
 .contact-info {
-    background-color: #f0f6f0;
+    background-image: var(--background-image);
     padding: 15px;
     border-radius: 10px;
     margin: 20px 0;
