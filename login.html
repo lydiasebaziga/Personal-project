@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>First Personal Project1</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -25,37 +25,33 @@
             </ul>
         </nav>
     </header>
-    <div class="contact-card">
-        <h1>Contact</h1>
+    <main>
+        <form id="form" action="/">
 
-        <p>We'd love to hear from you!</p>
+            <!-- Name -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-        <p>
-            Whether you have a question about our products, need help with an
-            order, or simply want to share your feedback, we're here to help.
-        </p>
+            <!-- Email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> lydiansebaziga@example.com</p>
-            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-        </div>
+            <!-- Password -->
+            <label for="password">password: </label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <!-- Submit Button -->
+            <button type="submit" value="submit">Submit</button>
 
-        <div class="business-hours">
-            <h2>Business Hours</h2>
-            <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
-        </div>
+        </form>
+        <div class="login"></div>
+    </main>
 
-        <p>
-            Follow us on social media to stay updated on new arrivals,
-            fashion inspiration, and exclusive offers.
-        </p>
+    <footer>
+        <p>&copy; 2026 lydia's beaty, all rights. resolved</p>
+    </footer>
 
-        <p>
-            Thank you for choosing us. We look forward to connecting with you!
-        </p>
-    </div>
-
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>

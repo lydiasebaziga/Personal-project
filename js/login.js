@@ -1,0 +1,26 @@
+
+const form = document.getElementById("form");
+const div = document.querySelector(".login");
+
+
+form.addEventListener("submit", onSubmit);
+
+function onSubmit(event) {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    const dataObj = Object.fromEntries(data.entries());
+    let name = dataObj.name;
+    console.log("our data:", dataObj);
+    form.reset();
+
+    let story = `Welcome, ${name}! You are logged in!`;
+
+    let message = document.createElement("p");
+    message.textContent = story;
+    div.appendChild(message);
+
+    form.style.display = "none";
+    console.log(story);
+}
+

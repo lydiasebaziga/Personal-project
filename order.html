@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Personal Project1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="./images/Green and White Simple Thrift Store Logo.png"></h1>
+        <nav>
+            <ul>
+                <li><a href="order.html" >Order</a></li>
+                <li><a href="./women.html" >Women</a></li>
+                <li><a href="./men.html" >Men</a></li>
+                <li><a href="./kids.html" >Kids</a></li>
+                <li><a href="./sport.html" >Sport</a></li>
+                <li><a href="./about.html" >About Us</a></li>
+                <li><a href="./contact.html" >Contact</a></li>
+                <li><a href="./login.html" >login</a></li>
+                <li><a href="./signup.html" >Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="form">
+
+            <!-- Name -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Number -->
+            <label for="phone">Phone:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" required><br><br>
+
+            <!-- Comments -->
+            <label for="comments">Any Comments?</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+            <!-- favorite cloths-->
+            <label for="cloths">favorite cloths:</label><br>
+            <select id="cloths" name="cloths">
+                <option value="">select favorite cloths</option>
+                <option value="dress">dress</option>
+                <option value="tshirt">t-shirt</option>
+                <option value="pant">Pant</option>
+            </select><br><br>
+
+            <!-- Favorite coffee -->
+            <fieldset>
+                <legend>cloths:</legend>
+                <label><input type="radio" name="toppings" value="buying"> buying</label><br>
+                <label><input type="radio" name="toppings" value="return">return</label><br>
+            </fieldset><br>
+
+            <!-- Submit Button -->
+            <button type="submit" value="submit">Submit</button>
+        </form>
+<div class="messageorder"></div>
+    </main>
+    <footer>
+        <p>&copy; 2026 lydia's beaty, all rights. resolved</p>
+    </footer>
+
+    <script src="js/order.js"></script>
+</body>
+
+</html>
